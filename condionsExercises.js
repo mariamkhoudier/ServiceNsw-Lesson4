@@ -41,9 +41,26 @@ function thePersonAge(person) {
     }
 }
 
-let x = thePersonAgeOr(person);
+let x = thePersonAge(person);
 console.log("OR Example person1 is " + x)
-let x1 = thePersonAgeOr(person2);
+let x1 = thePersonAge(person2);
 console.log("Or Example person2 is  " + x1)
 
+// 3- Create a function that takes 3 parameters. The first should be an object with two properties name and age. The second should be a number, the third should be a string. The function should return true if the age of the object is equal to the second parameter and the name is not equal to the third parameter. Otherwise return false.
+person = {
+    name: "mariam",
+    age: 28
+}
+function myFunction(person, num, string) {
+    if (person.age == num && person.name != string) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+
+result = myFunction(person, 10, "phone");
+console.log(result);
 
