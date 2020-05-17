@@ -25,20 +25,25 @@ let person2 = {
     age: 35
 }
 
+
+
 function thePersonAge(person) {
     if (person.age > 30) {
+        return true;
+    } else {
         for (let i = 0; i < person.name.length; i++) {
             if (person.name[i].toLowerCase() == "x") {
                 return true;
+            } else {
+                return false;
             }
         }
-    } else {
-
-        return false;
     }
 }
 
-let x = thePersonAge(person);
-console.log("person1 is " + x)
-let x1 = thePersonAge(person2);
-console.log("person2 is  " + x1)
+let x = thePersonAgeOr(person);
+console.log("OR Example person1 is " + x)
+let x1 = thePersonAgeOr(person2);
+console.log("Or Example person2 is  " + x1)
+
+
